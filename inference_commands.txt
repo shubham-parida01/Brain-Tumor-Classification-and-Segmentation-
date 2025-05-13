@@ -1,0 +1,36 @@
+# Brain Tumor Detection Inference Commands
+# ======================================
+
+# 1. Run inference on a single glioma image
+python inference.py --checkpoint "v2-results/checkpoints/resnet50_best_acc.pth" --image_path "data/testing/glioma/Te-gl_0299.jpg" --output_dir "results/inference"
+
+# 2. Run inference on a single meningioma image
+python inference.py --checkpoint "v2-results/checkpoints/resnet50_best_acc.pth" --image_path "data/testing/meningioma/Te-me_0299.jpg" --output_dir "results/inference"
+
+# 3. Run inference on a single pituitary image
+python inference.py --checkpoint "v2-results/checkpoints/resnet50_best_acc.pth" --image_path "data/testing/pituitary/Te-pi_0299.jpg" --output_dir "results/inference"
+
+# 4. Run inference on a single no-tumor image
+python inference.py --checkpoint "v2-results/checkpoints/resnet50_best_acc.pth" --image_path "data/testing/notumor/Te-no_0299.jpg" --output_dir "results/inference"
+
+# 5. Run inference on all images in a directory
+python inference.py --checkpoint "v2-results/checkpoints/resnet50_best_acc.pth" --image_path "data/testing" --output_dir "results/inference"
+
+# 6. Run inference on glioma test set
+python inference.py --checkpoint "v2-results/checkpoints/resnet50_best_acc.pth" --image_path "data/testing/glioma" --output_dir "results/inference/glioma"
+
+# 7. Run inference on meningioma test set
+python inference.py --checkpoint "v2-results/checkpoints/resnet50_best_acc.pth" --image_path "data/testing/meningioma" --output_dir "results/inference/meningioma"
+
+# 8. Run inference on pituitary test set
+python inference.py --checkpoint "v2-results/checkpoints/resnet50_best_acc.pth" --image_path "data/testing/pituitary" --output_dir "results/inference/pituitary"
+
+# 9. Run inference on no-tumor test set
+python inference.py --checkpoint "v2-results/checkpoints/resnet50_best_acc.pth" --image_path "data/testing/notumor" --output_dir "results/inference/notumor"
+
+# Notes:
+# - The model checkpoint path should point to your best model
+# - Output directory will be created if it doesn't exist
+# - Results include probability scores and visualizations
+# - For batch processing, use the directory commands
+# - All images should be in JPG/PNG format 

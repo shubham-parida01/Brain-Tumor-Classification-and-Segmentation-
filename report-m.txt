@@ -1,0 +1,57 @@
+**Simplified Report: How Our Brain Tumor Detection Model Stands Out**
+
+---
+
+**1. Introduction**
+
+Medical experts and researchers are always looking for better ways to detect brain tumors earlier and more accurately. In recent years, artificial intelligence (AI) has played a big role in helping doctors understand and diagnose medical images, especially MRI scans. This report explains how our AI model works, compares it with the newest technologies being used in hospitals and labs today, and shows why our method could be useful in the real world.
+
+---
+
+**2. What Are Other Hospitals and Labs Using Now?**
+
+Some big institutions like Harvard Medical School have built powerful AI systems that can look at thousands of medical images and figure out what kind of tumor a patient has. One of their models, called "CHIEF," is even smart enough to predict how a tumor might react to treatment, and it doesn't even need expensive DNA tests to do it. It's very accurate—up to 94% in some cases.
+
+Other researchers have created models that use something called "Transformers"—which are like super advanced computer eyes that can understand the whole image, not just tiny parts. These models are really good at outlining the exact shape and size of brain tumors in MRI scans.
+
+---
+
+**3. What Makes Our Model Special?**
+
+Our model is built to do two things at once:
+- **Figure out what kind of tumor it is** (classification)
+- **Show exactly where the tumor is in the brain scan** (segmentation)
+
+Here's how we built it:
+- We started with a popular and proven model called **ResNet50**, already trained on millions of everyday images.
+- We added two branches: one for identifying tumor types and another for mapping them on the scan.
+- We used something called **attention layers**, which help the model focus on the most important parts of the image.
+- We also used a technique called **Grad-CAM** to make the model's thinking visible, so doctors can see which parts of the brain it focused on.
+
+---
+
+**4. Comparing Our Model with the Best**
+
+| Feature                        | Harvard's CHIEF / New Transformers         | Our Model                              |
+|-------------------------------|---------------------------------------------|----------------------------------------|
+| What it does                  | Detects cancer, predicts treatment outcomes | Identifies and locates brain tumors     |
+| Speed                         | Very fast but needs strong computers        | Fast and works on average computers     |
+| Interpretability              | Sometimes hard to understand                | Shows visual heatmaps for clarity       |
+| Data required                 | Millions of samples                         | Works well with smaller, verified data  |
+| Can it explain its decision? | Not always clearly                          | Yes, through heatmaps (Grad-CAM)        |
+
+---
+
+**5. Why Our Model is Practical**
+
+While some of the newest models need supercomputers and massive datasets, our model is designed for hospitals that don't have all that. It still gives high accuracy, can show what it's thinking, and can be trained and used on standard hospital machines.
+
+This makes it more practical for real-world use, especially in places where technology is limited or doctors need results quickly without relying on large cloud systems.
+
+---
+
+**6. Final Thoughts**
+
+Our model brings together the best of both worlds: strong performance and real-world usability. It's accurate, can multitask, and provides doctors with visual proof of its decisions. While the future may involve even more powerful models like CHIEF, ours is already ready to be helpful in hospitals and clinics around the world.
+
+In future improvements, we might try mixing in newer technologies like Transformers to boost performance even more or testing it on larger international datasets. 

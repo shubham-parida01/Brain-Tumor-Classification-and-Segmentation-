@@ -1,0 +1,35 @@
+{
+    "class_metrics": {
+        "Meningiomas": {
+            "accuracy": 0.9916094584286804,
+            "sensitivity": 0.9666666666666667,
+            "specificity": 0.9990108803165183,
+            "auc": 0.9995746785361028
+        },
+        "Gliomas": {
+            "accuracy": 0.9908466819221968,
+            "sensitivity": 0.9967320261437909,
+            "specificity": 0.9890547263681592,
+            "auc": 0.9995024875621891
+        },
+        "Pituitary": {
+            "accuracy": 0.9992372234935164,
+            "sensitivity": 1.0,
+            "specificity": 0.9988962472406181,
+            "auc": 0.9999945493690895
+        },
+        "No_Tumor": {
+            "accuracy": 0.9984744469870328,
+            "sensitivity": 0.9933333333333333,
+            "specificity": 1.0,
+            "auc": 0.9999999999999999
+        }
+    },
+    "average_metrics": {
+        "accuracy": 0.9950419527078567,
+        "sensitivity": 0.9891830065359477,
+        "specificity": 0.9967404634813238,
+        "auc": 0.9997679288668453
+    },
+    "timestamp": "2025-04-27 18:12:48"
+}

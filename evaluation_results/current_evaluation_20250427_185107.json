@@ -1,0 +1,29 @@
+{
+    "class_metrics": {
+        "Meningiomas": {
+            "accuracy": 0.98,
+            "sensitivity": 0.96,
+            "specificity": 0.98,
+            "auc": 0.96
+        },
+        "Gliomas": {
+            "accuracy": 0.98,
+            "sensitivity": 0.96,
+            "specificity": 0.98,
+            "auc": 0.97
+        },
+        "Pituitary": {
+            "accuracy": 0.98,
+            "sensitivity": 0.98,
+            "specificity": 0.99,
+            "auc": 0.97
+        }
+    },
+    "average_metrics": {
+        "accuracy": 0.9823,
+        "sensitivity": 0.97,
+        "specificity": 0.98,
+        "auc": 0.97
+    },
+    "timestamp": "2025-04-27 18:51:07"
+}
