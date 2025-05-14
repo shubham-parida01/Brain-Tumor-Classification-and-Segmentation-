@@ -202,7 +202,7 @@ class GradCAM:
 8. COMPUTATIONAL REQUIREMENTS
 ---------------------------
 - GPU Memory: 8GB minimum
-- Training Time: ~6 hours on NVIDIA RTX 3080
+- Training Time: ~6 hours on NVIDIA RTX 2050
 - Inference Time: ~50ms per image
 - Model Size: ~100MB
 - Framework: PyTorch 1.9.0+
